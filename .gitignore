@@ -1,0 +1,8 @@
+# Design tool exports (source .dc.html and runtime)
+Quiff.dc.html
+support.js
+.thumbnail
+
+# Reference screenshots & uploads from design tool
+screenshots/
+uploads/
