@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quiff — the fast computer-use agent</title>
+<meta name="description" content="Quiff is an open-source agent that uses your computer and browser for you — at the speed of a person who knows the shortcuts.">
+<style>
+  :root { --bg:#0b0b0c; --fg:#f2f2f0; --muted:#9a9a96; --accent:#ff6a3d; }
+  @media (prefers-color-scheme: light) { :root { --bg:#fbfaf7; --fg:#111; --muted:#5f5f5a; } }
+  * { box-sizing:border-box; margin:0; }
+  body { background:var(--bg); color:var(--fg); font:17px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif;
+         min-height:100vh; display:flex; flex-direction:column; padding:0 24px; }
+  main { flex:1; max-width:680px; width:100%; margin:0 auto; display:flex; flex-direction:column; justify-content:center; padding:72px 0; }
+  .logo { font-weight:800; font-size:22px; letter-spacing:-0.02em; margin-bottom:56px; }
+  .logo span { color:var(--accent); }
+  h1 { font-size:clamp(36px,7vw,60px); line-height:1.05; letter-spacing:-0.035em; font-weight:800; }
+  p.lead { margin-top:22px; font-size:20px; color:var(--muted); max-width:34ch; }
+  .cta { margin-top:40px; display:flex; gap:14px; flex-wrap:wrap; }
+  a.btn { display:inline-block; padding:13px 22px; border-radius:10px; text-decoration:none; font-weight:600; }
+  a.primary { background:var(--accent); color:#fff; }
+  a.ghost { border:1px solid color-mix(in srgb, var(--fg) 25%, transparent); color:var(--fg); }
+  .status { margin-top:56px; font-size:14px; color:var(--muted); }
+  .status b { color:var(--accent); font-weight:600; }
+  footer { max-width:680px; width:100%; margin:0 auto; padding:24px 0; font-size:14px; color:var(--muted);
+           border-top:1px solid color-mix(in srgb, var(--fg) 12%, transparent); }
+  footer a { color:inherit; }
+</style>
+</head>
+<body>
+<main>
+  <div class="logo">quiff<span>.</span></div>
+  <h1>Your computer,<br>on autopilot — fast.</h1>
+  <p class="lead">Quiff is an open-source agent that uses your apps and browser for you, at the speed of someone who knows every shortcut.</p>
+  <div class="cta">
+    <a class="btn primary" href="mailto:hi@quiff.si?subject=Quiff%20early%20access">Get early access</a>
+    <a class="btn ghost" href="mailto:hi@quiff.si">Say hi</a>
+  </div>
+  <p class="status"><b>●</b> In development. Open source under Apache 2.0.</p>
+</main>
+<footer>© 2026 Quiff · <a href="mailto:hi@quiff.si">hi@quiff.si</a></footer>
+</body>
+</html>
